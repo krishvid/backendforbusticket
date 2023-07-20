@@ -9,8 +9,8 @@ require('dotenv').config()
 
 
 
-const authController=require('../backend/comtrollers/authController')
-const busticketComtroller= require('../backend/comtrollers/busticketController')
+const authController=require('./comtrollers/authController')
+const busticketComtroller= require('./comtrollers/busticketController')
 mongoose.connect(process.env.MONGODB)
   .then(() => console.log("Mongo connected"));
 
